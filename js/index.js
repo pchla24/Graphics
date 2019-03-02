@@ -66,36 +66,36 @@ var world3D = new function () {
 	i = 1;
 	j = 0;
 
-	objectPool.push(new line(new point(0 + (initsize * 20 * i), 0, 0 + (initsize * 20 * j)), new point(0 + (initsize * 20 * i), 0, initsize * 10 + (initsize * 20 * j))));
+	objectPool.push(new line(new point(0 + (initsize * 20 * i), 0, -initsize * 10 + (initsize * 20 * j)), new point(0 + (initsize * 20 * i), 0, initsize * 10 + (initsize * 20 * j))));
 	objectPool.push(new line(new point(0 + (initsize * 20 * i), 0, initsize * 10 + (initsize * 20 * j)), new point(0 + (initsize * 20 * i), initsize * 10, initsize * 10 + (initsize * 20 * j))));
-	objectPool.push(new line(new point(0 + (initsize * 20 * i), initsize * 10, initsize * 10 + (initsize * 20 * j)), new point(0 + (initsize * 20 * i), initsize * 10, 0 + (initsize * 20 * j))));
-	objectPool.push(new line(new point(0 + (initsize * 20 * i), initsize * 10, 0 + (initsize * 20 * j)), new point(0 + (initsize * 20 * i), 0, 0 + (initsize * 20 * j))));
+	objectPool.push(new line(new point(0 + (initsize * 20 * i), initsize * 10, initsize * 10 + (initsize * 20 * j)), new point(0 + (initsize * 20 * i), initsize * 10, -initsize * 10 + (initsize * 20 * j))));
+	objectPool.push(new line(new point(0 + (initsize * 20 * i), initsize * 10, -initsize * 10 + (initsize * 20 * j)), new point(0 + (initsize * 20 * i), 0, -initsize * 10 + (initsize * 20 * j))));
 
-	objectPool.push(new line(new point(initsize * 10 + (initsize * 20 * i), 0, 0 + (initsize * 20 * j)), new point(initsize * 10 + (initsize * 20 * i), 0, initsize * 10 + (initsize * 20 * j))));
+	objectPool.push(new line(new point(initsize * 10 + (initsize * 20 * i), 0, -initsize * 10 + (initsize * 20 * j)), new point(initsize * 10 + (initsize * 20 * i), 0, initsize * 10 + (initsize * 20 * j))));
 	objectPool.push(new line(new point(initsize * 10 + (initsize * 20 * i), 0, initsize * 10 + (initsize * 20 * j)), new point(initsize * 10 + (initsize * 20 * i), initsize * 10, initsize * 10 + (initsize * 20 * j))));
-	objectPool.push(new line(new point(initsize * 10 + (initsize * 20 * i), initsize * 10, initsize * 10 + (initsize * 20 * j)), new point(initsize * 10 + (initsize * 20 * i), initsize * 10, 0 + (initsize * 20 * j))));
-	objectPool.push(new line(new point(initsize * 10 + (initsize * 20 * i), initsize * 10, 0 + (initsize * 20 * j)), new point(initsize * 10 + (initsize * 20 * i), 0, 0 + (initsize * 20 * j))));
+	objectPool.push(new line(new point(initsize * 10 + (initsize * 20 * i), initsize * 10, initsize * 10 + (initsize * 20 * j)), new point(initsize * 10 + (initsize * 20 * i), initsize * 10, -initsize * 10 + (initsize * 20 * j))));
+	objectPool.push(new line(new point(initsize * 10 + (initsize * 20 * i), initsize * 10, -initsize * 10 + (initsize * 20 * j)), new point(initsize * 10 + (initsize * 20 * i), 0, -initsize * 10 + (initsize * 20 * j))));
 
-	objectPool.push(new line(new point(0 + (initsize * 20 * i), 0, 0 + (initsize * 20 * j)), new point(initsize * 10 + (initsize * 20 * i), 0, 0 + (initsize * 20 * j))));
+	objectPool.push(new line(new point(0 + (initsize * 20 * i), 0, -initsize * 10 + (initsize * 20 * j)), new point(initsize * 10 + (initsize * 20 * i), 0, -initsize * 10 + (initsize * 20 * j))));
 	objectPool.push(new line(new point(0 + (initsize * 20 * i), 0, initsize * 10 + (initsize * 20 * j)), new point(initsize * 10 + (initsize * 20 * i), 0, initsize * 10 + (initsize * 20 * j))));
 	objectPool.push(new line(new point(0 + (initsize * 20 * i), initsize * 10, initsize * 10 + (initsize * 20 * j)), new point(initsize * 10 + (initsize * 20 * i), initsize * 10, initsize * 10 + (initsize * 20 * j))));
-	objectPool.push(new line(new point(0 + (initsize * 20 * i), initsize * 10, 0 + (initsize * 20 * j)), new point(initsize * 10 + (initsize * 20 * i), initsize * 10, 0 + (initsize * 20 * j))));
+	objectPool.push(new line(new point(0 + (initsize * 20 * i), initsize * 10, -initsize * 10 + (initsize * 20 * j)), new point(initsize * 10 + (initsize * 20 * i), initsize * 10, -initsize * 10 + (initsize * 20 * j))));
 
 	i = 1;
 	j = 1;
 
-	objectPool.push(new line(new point(0 + (initsize * 20 * i), 0, 0 + (initsize * 20 * j)), new point(0 + (initsize * 20 * i), 0, initsize * 10 + (initsize * 20 * j))));
-	objectPool.push(new line(new point(0 + (initsize * 20 * i), 0, initsize * 10 + (initsize * 20 * j)), new point(0 + (initsize * 20 * i), initsize * 10, initsize * 10 + (initsize * 20 * j))));
+	objectPool.push(new line(new point(0 + (initsize * 20 * i), -initsize * 10, 0 + (initsize * 20 * j)), new point(0 + (initsize * 20 * i), -initsize * 10, initsize * 10 + (initsize * 20 * j))));
+	objectPool.push(new line(new point(0 + (initsize * 20 * i), initsize * 10, initsize * 10 + (initsize * 20 * j)), new point(0 + (initsize * 20 * i), -initsize * 10, initsize * 10 + (initsize * 20 * j))));
 	objectPool.push(new line(new point(0 + (initsize * 20 * i), initsize * 10, initsize * 10 + (initsize * 20 * j)), new point(0 + (initsize * 20 * i), initsize * 10, 0 + (initsize * 20 * j))));
-	objectPool.push(new line(new point(0 + (initsize * 20 * i), initsize * 10, 0 + (initsize * 20 * j)), new point(0 + (initsize * 20 * i), 0, 0 + (initsize * 20 * j))));
+	objectPool.push(new line(new point(0 + (initsize * 20 * i), initsize * 10, 0 + (initsize * 20 * j)), new point(0 + (initsize * 20 * i), -initsize * 10, 0 + (initsize * 20 * j))));
 
-	objectPool.push(new line(new point(initsize * 10 + (initsize * 20 * i), 0, 0 + (initsize * 20 * j)), new point(initsize * 10 + (initsize * 20 * i), 0, initsize * 10 + (initsize * 20 * j))));
-	objectPool.push(new line(new point(initsize * 10 + (initsize * 20 * i), 0, initsize * 10 + (initsize * 20 * j)), new point(initsize * 10 + (initsize * 20 * i), initsize * 10, initsize * 10 + (initsize * 20 * j))));
+	objectPool.push(new line(new point(initsize * 10 + (initsize * 20 * i), -initsize * 10, 0 + (initsize * 20 * j)), new point(initsize * 10 + (initsize * 20 * i), -initsize * 10, initsize * 10 + (initsize * 20 * j))));
+	objectPool.push(new line(new point(initsize * 10 + (initsize * 20 * i), initsize * 10, initsize * 10 + (initsize * 20 * j)), new point(initsize * 10 + (initsize * 20 * i), -initsize * 10, initsize * 10 + (initsize * 20 * j))));
 	objectPool.push(new line(new point(initsize * 10 + (initsize * 20 * i), initsize * 10, initsize * 10 + (initsize * 20 * j)), new point(initsize * 10 + (initsize * 20 * i), initsize * 10, 0 + (initsize * 20 * j))));
-	objectPool.push(new line(new point(initsize * 10 + (initsize * 20 * i), initsize * 10, 0 + (initsize * 20 * j)), new point(initsize * 10 + (initsize * 20 * i), 0, 0 + (initsize * 20 * j))));
+	objectPool.push(new line(new point(initsize * 10 + (initsize * 20 * i), initsize * 10, 0 + (initsize * 20 * j)), new point(initsize * 10 + (initsize * 20 * i), -initsize * 10, 0 + (initsize * 20 * j))));
 
-	objectPool.push(new line(new point(0 + (initsize * 20 * i), 0, 0 + (initsize * 20 * j)), new point(initsize * 10 + (initsize * 20 * i), 0, 0 + (initsize * 20 * j))));
-	objectPool.push(new line(new point(0 + (initsize * 20 * i), 0, initsize * 10 + (initsize * 20 * j)), new point(initsize * 10 + (initsize * 20 * i), 0, initsize * 10 + (initsize * 20 * j))));
+	objectPool.push(new line(new point(0 + (initsize * 20 * i), -initsize * 10, 0 + (initsize * 20 * j)), new point(initsize * 10 + (initsize * 20 * i), -initsize * 10, 0 + (initsize * 20 * j))));
+	objectPool.push(new line(new point(0 + (initsize * 20 * i), -initsize * 10, initsize * 10 + (initsize * 20 * j)), new point(initsize * 10 + (initsize * 20 * i), -initsize * 10, initsize * 10 + (initsize * 20 * j))));
 	objectPool.push(new line(new point(0 + (initsize * 20 * i), initsize * 10, initsize * 10 + (initsize * 20 * j)), new point(initsize * 10 + (initsize * 20 * i), initsize * 10, initsize * 10 + (initsize * 20 * j))));
 	objectPool.push(new line(new point(0 + (initsize * 20 * i), initsize * 10, 0 + (initsize * 20 * j)), new point(initsize * 10 + (initsize * 20 * i), initsize * 10, 0 + (initsize * 20 * j))));
 
@@ -449,16 +449,6 @@ line.prototype.getScreenCoords = function (c) {
 	this.tempIndex = this.points[0].tempIndex;
 	return (screenCoords);
 };
-line.prototype.render = function (cam, cont) {
-	var screenCoords = this.points[0].getScreenCoords(cam);
-	var screenCoords2 = this.points[1].getScreenCoords(cam);
-	cont.beginPath();
-	cont.moveTo(screenCoords.x, screenCoords.y);
-	cont.lineTo(screenCoords2.x, screenCoords2.y);
-	cont.strokeStyle = 'rgba( 0, 0, 0, 1.0 )';
-	cont.stroke();
-};
-
 line.prototype.render = function (cam, cont) {
 	var screenCoords = this.points[0].getScreenCoords(cam);
 	var screenCoords2 = this.points[1].getScreenCoords(cam);
