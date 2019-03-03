@@ -171,12 +171,12 @@ var world3D = new function () {
 				key.f = true;
 				event.preventDefault();
 				break;
-			case 84:
-				key.t = true;
+			case 73:
+				key.i = true;
 				event.preventDefault();
 				break;
-			case 71:
-				key.g = true;
+			case 79:
+				key.o = true;
 				event.preventDefault();
 				break;
 		}
@@ -224,12 +224,12 @@ var world3D = new function () {
 				key.f = false;
 				event.preventDefault();
 				break;
-			case 84:
-				key.t = false;
+			case 73:
+				key.i = false;
 				event.preventDefault();
 				break;
-			case 71:
-				key.g = false;
+			case 79:
+				key.o = false;
 				event.preventDefault();
 				break;
 		}
@@ -278,11 +278,11 @@ var world3D = new function () {
 			cam1.orientation.y += 0.03;
 
 		}
-		if (key.t) {
+		if (key.i) {
 			cam1.zoom += 0.05;
 
 		}
-		if (key.g) {
+		if (key.o) {
 			cam1.zoom -= 0.05;
 
 		}
@@ -318,7 +318,7 @@ var world3D = new function () {
 	}
 };
 
-function camera(xpos, ypos, zpos, xori, yori, zori, zoom, stereo) {
+function camera(xpos, ypos, zpos, xori, yori, zori, zoom) {
 	this.position = {
 		x: xpos || 0,
 		y: ypos || 0,
@@ -330,7 +330,6 @@ function camera(xpos, ypos, zpos, xori, yori, zori, zoom, stereo) {
 		z: zori || 0
 	};
 	this.zoom = zoom || 1;
-	this.stereo = stereo || 0;
 };
 camera.prototype.move = function (z) {
 
@@ -424,8 +423,8 @@ point.prototype.getScreenCoords = function (c) {
 
 	this.tempIndex = nz;
 	return {
-		x: (((nx + c.stereo) * (c.zoom / nz)) * (world.height / 2)) + (world.width / 2),
-		y: (((ny + c.stereo) * (c.zoom / nz)) * (world.height / 2)) + (world.height / 2),
+		x: (((nx) * (c.zoom / nz)) * (world.height / 2)) + (world.width / 2),
+		y: (((ny) * (c.zoom / nz)) * (world.height / 2)) + (world.height / 2),
 		distance: nz
 	};
 };
