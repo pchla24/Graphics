@@ -102,7 +102,7 @@ var world3D = new function () {
 
 	var renderPool = [];
 
-	var cam1 = new camera(-95, -604, -636, -0.6, 0.6, 0, 1.5, -2);
+	var cam1 = new camera(-320, -900, -1000, -0.6, 0.6, 0, 2.8, -2);
 
 	this.initialize = function () {
 
@@ -263,19 +263,19 @@ var world3D = new function () {
 		}
 
 		if (key.w) {
-			cam1.orientation.x += 0.03;
+			cam1.orientation.x += 0.02;
 
 		}
 		if (key.a) {
-			cam1.orientation.y -= 0.03;
+			cam1.orientation.y -= 0.02;
 
 		}
 		if (key.s) {
-			cam1.orientation.x -= 0.03;
+			cam1.orientation.x -= 0.02;
 
 		}
 		if (key.d) {
-			cam1.orientation.y += 0.03;
+			cam1.orientation.y += 0.02;
 
 		}
 		if (key.i) {
