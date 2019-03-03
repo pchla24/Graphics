@@ -315,7 +315,6 @@ var world3D = new function () {
 
 		renderPool = [];
 
-		TIME += 1;
 	}
 };
 
@@ -452,11 +451,14 @@ line.prototype.getScreenCoords = function (c) {
 line.prototype.render = function (cam, cont) {
 	var screenCoords = this.points[0].getScreenCoords(cam);
 	var screenCoords2 = this.points[1].getScreenCoords(cam);
-	cont.beginPath();
-	cont.moveTo(screenCoords.x, screenCoords.y);
-	cont.lineTo(screenCoords2.x, screenCoords2.y);
-	cont.strokeStyle = 'rgba( 0, 0, 0, 1.0 )';
-	cont.stroke();
+	var distance = ((screenCoords.distance + screenCoords2.distance) / 2);
+	if (distance > 125) {
+		cont.beginPath();
+		cont.moveTo(screenCoords.x, screenCoords.y);
+		cont.lineTo(screenCoords2.x, screenCoords2.y);
+		cont.strokeStyle = 'rgba( 0, 0, 0, 1.0 )';
+		cont.stroke();
+	}
 };
 
 world3D.initialize();
