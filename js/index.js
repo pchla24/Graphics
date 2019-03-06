@@ -26,8 +26,8 @@ var world3D = new function () {
 		e: false,
 		r: false,
 		f: false,
-		t: false,
-		g: false
+		i: false,
+		o: false
 	};
 
 	var objectPool = [];
@@ -339,10 +339,10 @@ camera.prototype.move = function (z) {
 
 	var cosx = Math.cos(-this.orientation.x);
 	var cosy = Math.cos(-this.orientation.y);
-	var cosz = Math.cos(-this.orientation.z);
+	var cosz = Math.cos(0);
 	var sinx = Math.sin(-this.orientation.x);
 	var siny = Math.sin(-this.orientation.y);
-	var sinz = Math.sin(-this.orientation.z);
+	var sinz = Math.sin(0);
 
 	var nx = (cosy * (sinz * (ty) + cosz * (tx)) - siny * (tz));
 	// var ny = (sinx * (cosy * (tz) + siny * (sinz * (ty) + cosz * (tx))) + cosx * (cosz * (ty) - sinz * (tx)));
